@@ -2,16 +2,16 @@ import java.util.Random;
 
 public class Main
 {
-    public static String NameTranformation(String FirstName, String LastName)
+    private static String nameTranformation(String firstName, String lastName)
     {
         Random rand = new Random();
 
-        return FirstName.substring(0,1)  + LastName.substring(0,5) + rand.nextInt(100);
+        return firstName.substring(0,1)  + lastName.substring(0,5) + rand.nextInt(100);
     }
 
     public static void main(String[] args)
     {
-        System.out.println(NameTranformation("Timothy", "Hilonenko"));
-        System.out.println(NameTranformation("Maria", "Hilonenko"));
+        System.out.println(nameTranformation("Timothy", "Hilonenko"));
+        System.out.println(nameTranformation("Maria", "Hilonenko"));
     }
 }
